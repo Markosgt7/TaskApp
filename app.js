@@ -15,7 +15,7 @@ $(document).ready(function(){
                     let template = '';
                     tasks.forEach(task => {
                         template += `<li>
-                                ${task.name}
+                                ${task.name},${task.description}
                         </li>`
                     });
                     $('#container').html(template);
@@ -63,6 +63,9 @@ $(document).ready(function(){
                                 <button class="btn btn-danger btn-sm task-delete">
                                     Delete
                                 </button>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="text-center">
                             </td>
                         </tr>
                     `
